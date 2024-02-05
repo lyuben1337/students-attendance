@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.*?>
+<VBox minHeight="0.0" minWidth="0.0" prefHeight="446.0" prefWidth="750" VBox.vgrow="ALWAYS"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.studentattendance.gui.controllers.group.GroupController">
+    <TableView fx:id="tableView" prefHeight="400" prefWidth="750" VBox.vgrow="ALWAYS" editable="true">
+        <columns>
+            <TableColumn fx:id="nameColumn" prefWidth="750" text="Назва">
+                <cellValueFactory>
+                    <PropertyValueFactory property="name" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+        <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+        </columnResizePolicy>
+    </TableView>
+    <HBox prefHeight="60.0" prefWidth="750.0" maxHeight="60.0" minHeight="60" spacing="10">
+        <Button fx:id="addButton" text="Додати групу" HBox.hgrow="ALWAYS"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="deleteButton" text="Видалити групу" HBox.hgrow="ALWAYS"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="getStudentsButton" text="Студенти" HBox.hgrow="ALWAYS"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="getScheduleButton" text="Розклад" HBox.hgrow="ALWAYS"/>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button fx:id="refreshButton" text="Оновити" HBox.hgrow="ALWAYS"/>
+        <padding>
+            <Insets left="60.0" right="60.0" top="15.0"/>
+        </padding>
+    </HBox>
+</VBox>

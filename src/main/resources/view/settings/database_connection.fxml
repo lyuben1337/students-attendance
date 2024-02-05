@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane prefHeight="200.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.studentattendance.gui.controllers.settings.DatabaseConnectionController">
+    <center>
+
+        <GridPane alignment="CENTER" hgap="10" prefHeight="100.0" prefWidth="500.0" vgap="10"
+                  BorderPane.alignment="CENTER">
+            <Label text="Username:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="usernameField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <Label text="Password:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <PasswordField fx:id="passwordField" style="-fx-font-size: 10" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <Label text="URL:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <TextField fx:id="urlField" GridPane.columnIndex="1" GridPane.rowIndex="2" prefWidth="350"/>
+            <Button text="Connect" fx:id="connectButton" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <Button text="Cancel" fx:id="cancelButton" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        </GridPane>
+    </center>
+</BorderPane>
